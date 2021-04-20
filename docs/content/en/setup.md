@@ -7,8 +7,6 @@ category: Getting started
 
 ## Installation
 
-**@next: <badge>1.x.x</badge>, <badge>3.x.x</badge> for Vue 3**
-
 <code-group>
   <code-block label="Yarn" active>
 
@@ -26,33 +24,19 @@ npm install vue-final-modal@next
   </code-block>
 </code-group>
 
-**@latest: <badge>0.x.x</badge>, <badge>2.x.x</badge> for Vue 2**
-
-<code-group>
-  <code-block label="Yarn" active>
-
-```bash
-yarn add vue-final-modal@latest
-```
-
-  </code-block>
-  <code-block label="NPM">
-
-```bash
-npm install vue-final-modal@latest
-```
-
-  </code-block>
-</code-group>
-
 ## Registeration
 
 ### Vue
 
 ```js[main.js]
+import { createApp } from 'vue'
 import VueFinalModal from 'vue-final-modal'
 
-Vue.use(VueFinalModal())
+const app = createApp()
+
+app.use(VueFinalModal)
+
+app.mount('#app')
 ```
 
 ### Nuxt
